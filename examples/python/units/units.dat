@@ -1,0 +1,448 @@
+****STANDARD****
+ Data Storage
+ metric
+ nometric
+ english
+ noenglish
+ 1
+ bits
+ english
+ 8
+ bytes
+ english
+ 1
+ kilobytes
+ english
+ 1/1024
+ megabytes
+ english
+ 1/1024^2
+ gigabytes
+ english
+ 1/1024^3
+ terabytes
+ english
+ 1/1024^4
+****STANDARD****
+ Angle
+ metric
+ radians
+ english
+ degrees
+ ((Math|pi) /180)
+  radians
+  metric
+   1
+  degrees
+  english
+   1
+  minutes
+  english
+   60
+  seconds
+  english
+   3600
+  revolutions
+  english
+   (1/360)
+****STANDARD****
+ Area
+ metric
+ meters squared
+ english
+ feet squared
+ 0.09290304
+  cm squared
+  metric
+   10000
+  inches squared
+  english
+   144
+  feet squared
+  english
+   1
+  yards squared
+  english
+  (1/9)
+  meters squared
+  metric
+   1
+  acres
+  english
+   (1/43560)
+  hectares
+  metric
+   (1/10000)
+  km squared
+  metric
+   (1/1000000)
+  miles squared
+  english
+   (1/27878400)
+****STANDARD****
+ Density
+ metric
+ kilograms / cubic meter
+ english
+ pounds / cubic foot
+ 16.018464
+  kilograms / cubic meter
+  metric
+   1
+  pounds / cubic foot
+  english
+   1
+  slugs / cubic foot
+  metric
+   .00194032031464
+  grams / cubic centimeter
+  metric
+   .001
+  pounds / cubic inch
+  english
+   0.000578704
+****STANDARD****
+ Energy
+ metric
+ joules
+ english
+ foot pounds
+ 1.355819
+  electron volts
+  metric
+   6.242197*10^18
+  mega election volts
+  metric
+   6.242197*10^12
+  ergs
+  metric
+   1*10^7
+  joules
+  metric
+   1
+  foot pounds
+  english
+   1
+  British Thermal Units
+  metric
+   9.47817*10^-4
+  horsepower hours
+  english
+   5.0505*10^-7
+  kilowatt hours
+  metric
+   2.7778*10^-7
+****STANDARD****
+ Force
+ metric
+ newtons
+ english
+ pounds
+ 4.448221659
+  dynes
+  metric
+   100000
+  millinewtons
+  metric
+   1000
+  grams
+  metric
+   101.9716213
+  newtons
+  metric
+   1
+  kilograms
+  metric
+   .1019716213
+  grains
+  english
+   7000
+  pennyweights
+  english
+   (291+(2/3))
+  drams
+  english
+   256
+  poundals
+  english
+   32.17404856
+  ounces
+  english
+   16
+  pounds
+  english
+   1
+  stones
+  english
+   (1/14)
+  tons
+  english
+   (1/2000)
+****STANDARD****
+ Length
+ metric
+ m
+ english
+ feet
+ 0.3048
+  fermis
+  metric
+   10^15
+  Bohr radii
+  metric
+   1.8896*10^10
+  angtroms
+  metric
+   10^10
+  nm
+  metric
+   10^9
+  microns
+  metric
+   10^6
+  mils
+  english
+   12000
+  mm
+  metric
+   10^3
+  cm
+  metric
+   10^2
+  inches
+  english
+   12.0
+  feet
+  english
+   1.0
+  yards
+  english
+   (1/3)
+  m
+  metric
+   1.0
+  fathoms
+  english
+   (1/6)
+  rods
+  english
+   (1/16.5)
+  kilometers
+  metric
+   0.001
+  miles
+  english
+   (1/5280)
+  nautical miles
+  english
+   (1/6080)
+  light-years
+  metric
+   1.05702099772*10^-16
+  parsecs
+  metric
+   3.24077884990*10^-17
+  mparsecs
+  metric
+   3.24077884990*10^-20
+****STANDARD****
+ Mass
+ metric
+ kilograms
+ english
+ pounds
+ .4535923745
+  grams
+  metric
+   1000
+  ounces
+  english
+   16
+  pounds
+  english
+   1
+  kilograms
+  metric
+   1
+  atomic mass units
+  metric
+   6.022*10^26
+  slugs
+  english
+   (1/32.17404856)
+  tons
+  english
+   (1/2000)
+  metric tons
+  metric
+   (1/1000)
+****STANDARD****
+ Power
+ metric
+ Watts
+ english
+ horsepower
+ 745.69987136
+  British Thermal Units / hour
+  english
+   2544.433552 
+  Watts
+  metric
+   1
+  horsepower
+  english
+   1
+  foot pounds / second
+  english
+   550
+  calories / second
+  metric
+   .2389
+****STANDARD****
+ Pressure
+ metric
+ pascals
+ english
+ pounds / inch squared
+ 6894.7448
+  dynes / cm squared
+  metric
+   10
+  pascals
+  metric
+   1
+  newtons / meter squared
+  metric
+   1
+  pounds / foot squared
+  english
+   144
+  millibars
+  metric
+   .01
+  torrs
+  english
+   51.71492575
+  inches of H2O
+  english
+   27.68156578
+  cm of Hg
+  english
+   5.171492575
+  pounds / inch squared
+  english
+   1
+  bars
+  metric
+   .00001
+  atmospheres
+  english
+   .068045904
+****STANDARD****
+ Speed
+ metric
+ meter / second
+ english
+ miles / hour
+ .44704
+  centimeters / second
+  metric
+   100
+  kilometers / hour
+  metric
+   3.6
+  feet / second
+  english
+   (22/15)
+  miles / hour
+  english
+   1
+  knots
+  english
+   .868976242
+  meters / second
+  metric
+   1
+  miles / minute
+  english
+   (1/60)
+****STANDARD****
+ Temp
+ metric
+ Celsius
+ english
+ Celsius
+ 1
+  Celsius
+  metric
+   1
+  Fahrenheit
+  metric
+   1-32*(5/9)
+  Kelvin
+  metric
+   1-273.15
+  Rankin
+  metric
+   (5/9)-273.15
+****STANDARD****
+ Time
+ metric
+ seconds
+ english
+ seconds
+ 1
+  femtoseconds
+  english
+   10^15
+  picoseconds
+  english
+   10^12
+  nanoseconds
+  english
+   10^9
+  microseconds
+  english
+   10^6
+  milliseconds
+  english
+   10^3
+  seconds
+  english
+   1
+  minutes
+  english
+   (1/60)
+  hours
+  english
+   (1/3600)
+  mean sidereal days
+  english
+   (1/86164.09962)
+  calendar days
+  english
+   (1/86400)
+  mean solar days
+  english
+   (1/86400)
+  weeks
+  english
+   (1/604800)
+  sydonic months
+  english
+   (1/2551440)
+  calendar years
+  english
+   (1/31536000)
+  tropical years
+  english
+   (1/31556900)
+  sidereal years
+  english
+   (1/31558419)
+  centuries
+  english
+   (1/3153600000)
+  millenia
+  english
+   (1/31536000000)

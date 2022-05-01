@@ -1,0 +1,281 @@
+
+
+Data visualization with different Charts in Python
+Difficulty Level : Medium
+Last Updated : 09 Mar, 2018
+Data Visualization is the presentation of data in graphical format. It helps people understand the significance of data by summarizing and presenting huge amount of data in a simple and easy-to-understand format and helps communicate information clearly and effectively.
+
+Consider this given Data-set for which we will be plotting different charts :
+
+ 
+
+Different Types of Charts for Analyzing & Presenting Data
+ 
+1. Histogram :
+The histogram represents the frequency of occurrence of specific phenomena which lie within a specific range of values and arranged in consecutive and fixed intervals.
+
+In below code histogram is plotted for Age, Income, Sales. So these plots in the output shows frequency of each unique value for each attribute.
+
+# import pandas and matplotlib
+import pandas as pd
+import matplotlib.pyplot as plt
+  
+# create 2D array of table given above
+data = [['E001', 'M', 34, 123, 'Normal', 350],
+        ['E002', 'F', 40, 114, 'Overweight', 450],
+        ['E003', 'F', 37, 135, 'Obesity', 169],
+        ['E004', 'M', 30, 139, 'Underweight', 189],
+        ['E005', 'F', 44, 117, 'Underweight', 183],
+        ['E006', 'M', 36, 121, 'Normal', 80],
+        ['E007', 'M', 32, 133, 'Obesity', 166],
+        ['E008', 'F', 26, 140, 'Normal', 120],
+        ['E009', 'M', 32, 133, 'Normal', 75],
+        ['E010', 'M', 36, 133, 'Underweight', 40] ]
+  
+# dataframe created with
+# the above data array
+df = pd.DataFrame(data, columns = ['EMPID', 'Gender', 
+                                    'Age', 'Sales',
+                                    'BMI', 'Income'] )
+  
+# create histogram for numeric data
+df.hist()
+  
+# show plot
+plt.show()
+Output :
+
+ 
+2. Column Chart :
+A column chart is used to show a comparison among different attributes, or it can show a comparison of items over time.
+
+# Dataframe of previous code is used here
+  
+# Plot the bar chart for numeric values
+# a comparison will be shown between
+# all 3 age, income, sales
+df.plot.bar()
+  
+# plot between 2 attributes
+plt.bar(df['Age'], df['Sales'])
+plt.xlabel("Age")
+plt.ylabel("Sales")
+plt.show()
+Output :
+
+ 
+3. Box plot chart :
+A box plot is a graphical representation of statistical data based on the minimum, first quartile, median, third quartile, and maximum. The term “box plot” comes from the fact that the graph looks like a rectangle with lines extending from the top and bottom. Because of the extending lines, this type of graph is sometimes called a box-and-whisker plot. For quantile and median refer to this Quantile and median.
+
+# For each numeric attribute of dataframe
+df.plot.box()
+  
+# individual attribute box plot
+plt.boxplot(df['Income'])
+plt.show()
+Output :
+
+ 
+4. Pie Chart :
+A pie chart shows a static number and how categories represent part of a whole the composition of something. A pie chart represents numbers in percentages, and the total sum of all segments needs to equal 100%.
+
+plt.pie(df['Age'], labels = {"A", "B", "C",
+                             "D", "E", "F",
+                             "G", "H", "I", "J"},
+                               
+autopct ='% 1.1f %%', shadow = True)
+plt.show()
+  
+plt.pie(df['Income'], labels = {"A", "B", "C",
+                                "D", "E", "F",
+                                "G", "H", "I", "J"},
+                                  
+autopct ='% 1.1f %%', shadow = True)
+plt.show()
+  
+plt.pie(df['Sales'], labels = {"A", "B", "C",
+                               "D", "E", "F",
+                               "G", "H", "I", "J"},
+autopct ='% 1.1f %%', shadow = True)
+plt.show()
+Output :
+
+ 
+5. Scatter plot :
+A scatter chart shows the relationship between two different variables and it can reveal the distribution trends. It should be used when there are many different data points, and you want to highlight similarities in the data set. This is useful when looking for outliers and for understanding the distribution of your data.
+
+# scatter plot between income and age
+plt.scatter(df['income'], df['age'])
+plt.show()
+  
+# scatter plot between income and sales
+plt.scatter(df['income'], df['sales'])
+plt.show()
+  
+# scatter plot between sales and age
+plt.scatter(df['sales'], df['age'])
+plt.show()
+Output :
+
+
+
+
+
+
+Like
+15
+Previous
+Next
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+4
+5
+6
+Python | Plotting Different types of style charts in excel sheet using XlsxWriter module
+26, Dec 18
+Python | Plotting column charts in excel sheet with data tables using XlsxWriter module
+27, Dec 18
+Python | Plotting charts in excel sheet with Data Tools using XlsxWriter module | Set - 1
+27, Dec 18
+Python | Plotting charts in excel sheet with data tools using XlsxWriter module | Set – 2
+28, Dec 18
+Understanding different Box Plot with visualization
+18, Jan 19
+Data analysis and Visualization with Python
+30, Dec 16
+Data Analysis and Visualization with Python | Set 2
+20, Feb 18
+Python - Data visualization using Bokeh
+29, Jun 18
+COVID-19 Data Visualization using matplotlib in Python
+07, Jun 20
+Data Visualization using Turicreate in Python
+18, Jul 20
+Top 8 Python Libraries for Data Visualization
+13, Aug 20
+Visualization and Prediction of Crop Production data using Python
+24, Nov 20
+Data Visualization with Python Seaborn
+02, Dec 20
+Python - Data visualization using covid19 India API
+20, Jan 21
+Python Bokeh tutorial - Interactive Data Visualization with Bokeh
+19, Feb 21
+Time series data Visualization in Python
+15, Mar 21
+Data Visualization with Python
+22, Jul 21
+Using Plotly for Interactive Data Visualization in Python
+22, Jul 21
+Python - Data visualization tutorial
+29, Dec 21
+Data Visualization using Plotnine and ggplot2 in Python
+29, Dec 21
+Pandas Built-in Data Visualization | ML
+17, Jun 19
+Data Visualization Using Chartjs and Django
+22, Jan 20
+10 Best Data Visualization Tools in 2020
+06, Apr 20
+Interactive visualization of data using Bokeh
+05, Jun 20
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+Mohityadav
+@Mohityadav
+Vote for difficulty
+Current difficulty : Medium
+Easy
+Normal
+Medium
+Hard
+Expert
+Article Tags :
+Python-Miscellaneous
+Python
+Improve Article
+Report Issue
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+
+WHAT'S NEW
+
+Python Programming Foundation -Self Paced Course
+View Details
+
+Must Do Coding Questions - Self Paced
+View Details
+
+Data Structures & Algorithms- Self Paced Course
+View Details
+
+MOST POPULAR IN PYTHON
+Python Dictionary
+Read a file line by line in Python
+Enumerate() in Python
+How to Install PIP on Windows ?
+Iterate over a list in Python
+
+MORE RELATED ARTICLES IN PYTHON
+Different ways to create Pandas Dataframe
+Python String | replace()
+Python program to convert a list to string
+Create a Pandas DataFrame from Lists
+Reading and Writing to text files in Python
+
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+In Media
+Contact Us
+Privacy Policy
+Copyright Policy
+Learn
+Algorithms
+Data Structures
+SDE Cheat Sheet
+Machine learning
+CS Subjects
+Video Tutorials
+News
+Top News
+Technology
+Work & Career
+Business
+Finance
+Lifestyle
+Languages
+Python
+Java
+CPP
+Golang
+C#
+SQL
+Web Development
+Web Tutorials
+Django Tutorial
+HTML
+CSS
+JavaScript
+Bootstrap
+Contribute
+Write an Article
+Improve an Article
+Pick Topics to Write
+Write Interview Experience
+Internships
+Video Internship
+@geeksforgeeks , Some rights reserved
+Lightbox
+Start Your Coding Journey Now!
+Login
+Register

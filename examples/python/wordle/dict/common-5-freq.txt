@@ -1,0 +1,27 @@
+content of this file are 
+   7 x
+   8 q
+   9 z
+  10 j
+  45 k
+  46 v
+  63 b
+  64 w
+  66 f
+  72 m
+  75 g
+  88 p
+ 100 d
+ 107 y
+ 115 u
+ 133 c
+ 142 n
+ 156 h
+ 181 i
+ 202 s
+ 223 o
+ 228 l
+ 235 t
+ 251 r
+ 322 a
+ 361 e

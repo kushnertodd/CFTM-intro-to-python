@@ -1,0 +1,292 @@
+
+Python is a great language for doing data analysis, primarily because of the fantastic ecosystem of data-centric Python packages. Pandas is one of those packages and makes importing and analyzing data much easier.
+There are some important math operations that can be performed on a pandas series to simplify data analysis using Python and save a lot of time.
+
+To get the data-set used, click here. 
+
+s=read_csv("stock.csv", squeeze=True)
+#reading csv file and making series
+Function	Use
+s.sum()	Returns sum of all values in the series
+s.mean()	
+Returns mean of all values in series. Equals to s.sum()/s.count() 
+ 
+
+
+
+ 
+
+s.std()	Returns standard deviation of all values
+s.min() or s.max()	Return min and max values from series
+s.idxmin() or s.idxmax()	Returns index of min or max value in series
+s.median()	Returns median of all value
+s.mode()	Returns mode of the series
+s.value_counts()	
+Returns series with frequency of each value 
+ 
+
+
+
+ 
+
+s.describe()	
+Returns a series with information like mean, mode, etc depending on dtype of data passed 
+ 
+
+
+
+ 
+
+Code #1: 
+
+Python3
+# import pandas for reading csv file
+import pandas as pd
+ 
+#reading csv file
+s = pd.read_csv("stock.csv", squeeze = True)
+ 
+#using count function
+print(s.count())
+ 
+#using sum function
+print(s.sum())
+ 
+#using mean function
+print(s.mean())
+ 
+#calculation average
+print(s.sum()/s.count())
+ 
+#using std function
+print(s.std())
+ 
+#using min function
+print(s.min())
+ 
+#using max function
+print(s.max())
+ 
+#using count function
+print(s.median())
+ 
+#using mode function
+print(s.mode())
+Output:  
+
+3012
+1006942.0
+334.3100929614874
+334.3100929614874
+173.18720477113115
+49.95
+782.22
+283.315
+0    291.21
+Code #2: 
+
+Python3
+# import pandas for reading csv file
+import pandas as pd
+ 
+#reading csv file
+s = pd.read_csv("stock.csv", squeeze = True)
+ 
+#using describe function
+print(s.describe())
+ 
+#using count function
+print(s.idxmax())
+ 
+#using idxmin function
+print(s.idxmin())
+ 
+#count of elements having value 3
+print(s.value_counts().head(3))
+Output: 
+
+dtype: float64
+count    3012.000000
+mean      334.310093
+std       173.187205
+min        49.950000
+25%       218.045000
+50%       283.315000
+75%       443.000000
+max       782.220000
+Name: Stock Price, dtype: float64
+
+3011
+11
+291.21    5
+288.47    3
+194.80    3
+Name: Stock Price, dtype: int64
+Unexpected Outputs and Restrictions:
+
+.sum(), .mean(), .mode(), .median() and other such mathematical operations are not applicable on string or any other data type than numeric value.
+.sum() on a string series would give an unexpected output and return a string by concatenating every string.
+
+
+
+
+Like
+2
+Previous
+Next
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+4
+5
+6
+RFM Analysis Analysis Using Python
+21, Oct 21
+Data analysis and Visualization with Python
+30, Dec 16
+Analysis of test data using K-Means Clustering in Python
+07, Jan 18
+Replacing strings with numbers in Python for Data Analysis
+31, Jan 18
+Data Analysis and Visualization with Python | Set 2
+20, Feb 18
+Multidimensional data analysis in Python
+29, Oct 18
+Exploratory Data Analysis in Python | Set 1
+18, Jan 19
+Exploratory Data Analysis in Python | Set 2
+18, Jan 19
+Olympics Data Analysis Using Python
+23, Sep 21
+Data Analysis with Python
+08, Nov 21
+Exploratory Data Analysis in Python
+10, Jun 18
+Data analysis using Pandas
+20, Jun 18
+Violin Plot for Data Analysis
+21, Jan 19
+Data Analysis with SciPy
+26, Jun 19
+Data Analysis in Financial Market – Where to Begin?
+01, May 20
+Exploratory Data Analysis on Iris Dataset
+22, Jul 21
+What is Exploratory Data Analysis ?
+22, Jul 21
+Pandas and NumPy Exercies for Data Analysis
+29, Dec 21
+Arithmetic Operations on Images using OpenCV | Set-2 (Bitwise Operations on Binary Images)
+25, Feb 19
+Python - Performing operations on the stock data
+01, Sep 20
+Twitter Sentiment Analysis using Python
+24, Jan 17
+Text Analysis in Python 3
+29, Jun 17
+Analysis of Different Methods to find Prime Number in Python
+24, Aug 17
+Python | NLP analysis of Restaurant reviews
+05, Sep 18
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+Kartikaybhutani
+@Kartikaybhutani
+Vote for difficulty
+Current difficulty : Easy
+Easy
+Normal
+Medium
+Hard
+Expert
+Improved By :
+sagar0719kumar
+gulshankumarar231
+Article Tags :
+python-modules
+Python
+Improve Article
+Report Issue
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+
+WHAT'S NEW
+
+Python Programming Foundation -Self Paced Course
+View Details
+
+Must Do Coding Questions - Self Paced
+View Details
+
+Data Structures & Algorithms- Self Paced Course
+View Details
+
+MOST POPULAR IN PYTHON
+Python Dictionary
+Read a file line by line in Python
+Enumerate() in Python
+How to Install PIP on Windows ?
+Iterate over a list in Python
+
+MORE RELATED ARTICLES IN PYTHON
+Different ways to create Pandas Dataframe
+Python String | replace()
+Create a Pandas DataFrame from Lists
+Python program to convert a list to string
+Reading and Writing to text files in Python
+
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+In Media
+Contact Us
+Privacy Policy
+Copyright Policy
+Learn
+Algorithms
+Data Structures
+SDE Cheat Sheet
+Machine learning
+CS Subjects
+Video Tutorials
+News
+Top News
+Technology
+Work & Career
+Business
+Finance
+Lifestyle
+Languages
+Python
+Java
+CPP
+Golang
+C#
+SQL
+Web Development
+Web Tutorials
+Django Tutorial
+HTML
+CSS
+JavaScript
+Bootstrap
+Contribute
+Write an Article
+Improve an Article
+Pick Topics to Write
+Write Interview Experience
+Internships
+Video Internship
+@geeksforgeeks , Some rights reserved
+Lightbox
+Start Your Coding Journey Now!
+Login
+Register

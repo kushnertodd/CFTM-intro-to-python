@@ -1,0 +1,70 @@
+3bc26632c3fddf
+
+read c
+If c=\d
+		read c
+	while c=\d
+		read c
+			end
+	Read c
+	If c=\s
+				read c
+		If c=\w
+						read c
+			while 
+	Else
+		error
+else
+	error
+
+
+
+\[?]+
+FunctionPlus(condition)
+
+Read c
+If c=[condition]
+	read c
+	while c=[condition]
+		read c
+	end
+Else
+	error
+
+\[?]*
+FunctionStar(condition)
+
+Read c
+while c=[condition]
+	read c
+end
+
+
+\[?]
+FunctionOne(condition)
+
+read c
+If c=[condition]
+	Business as usual, nothing to see here
+Else
+	error
+	
+FunctionError
+	"Heyyyyy so everything just went kinda sidways and we've decided to shut down for the day. Please go somewhere else now. Thanks"
+	Halt
+	"if you're reading this right now, your compiler is broken"
+	
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+ae.txt
+ai.txt
+ao.txt
+au.txt
+ei.txt
+eo.txt
+eu.txt
+io.txt
+iu.txt
+ou.txt

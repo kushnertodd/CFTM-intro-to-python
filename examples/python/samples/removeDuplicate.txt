@@ -1,0 +1,233 @@
+Method 2:
+
+def removeDuplicate(str):
+    s=set(str)
+    s="".join(s)
+    print("Without Order:",s)
+    t=""
+    for i in str:
+        if(i in t):
+            pass
+        else:
+            t=t+i
+        print("With Order:",t)
+      
+str="geeksforgeeks"
+removeDuplicate(str)
+Output:
+
+Without Order: rofgeks
+With Order: geksfor
+What do OrderedDict and fromkeys() do ?
+
+An OrderedDict is a dictionary that remembers the order of the keys that were inserted first. If a new entry overwrites an existing entry, the original insertion position is left unchanged.
+
+For example see below code snippet :
+
+from collections import OrderedDict
+  
+ordinary_dictionary = {}
+ordinary_dictionary['a'] = 1
+ordinary_dictionary['b'] = 2
+ordinary_dictionary['c'] = 3
+ordinary_dictionary['d'] = 4
+ordinary_dictionary['e'] = 5
+  
+# Output = {'a': 1, 'c': 3, 'b': 2, 'e': 5, 'd': 4}
+print (ordinary_dictionary)    
+  
+ordered_dictionary = OrderedDict()
+ordered_dictionary['a'] = 1
+ordered_dictionary['b'] = 2
+ordered_dictionary['c'] = 3
+ordered_dictionary['d'] = 4
+ordered_dictionary['e'] = 5
+  
+# Output = {'a':1,'b':2,'c':3,'d':4,'e':5}
+print (ordered_dictionary)      
+fromkeys() creates a new dictionary with keys from seq and values set to value and returns list of keys, fromkeys(seq[, value]) is the syntax for fromkeys() method.
+
+Parameters :
+
+seq : This is the list of values which would be used for dictionary keys preparation.
+value : This is optional, if provided then value would be set to this value.
+For example see below code snippet :
+
+from collections import OrderedDict
+seq = ('name', 'age', 'gender')
+dict = OrderedDict.fromkeys(seq)
+  
+# Output = {'age': None, 'name': None, 'gender': None}
+print (str(dict)) 
+dict = OrderedDict.fromkeys(seq, 10)
+  
+# Output = {'age': 10, 'name': 10, 'gender': 10}
+print (str(dict))       
+This article is contributed by Shashank Mishra (Gullu). If you like GeeksforGeeks and would like to contribute, you can also write an article using write.geeksforgeeks.org or mail your article to review-team@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.
+
+
+
+
+
+Like
+12
+Next
+Remove duplicates from a given string
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+4
+5
+6
+Python | Remove all duplicates words from a given sentence
+02, Jan 18
+Python Program To Remove Duplicates From A Given String
+22, Nov 21
+Remove all consecutive duplicates from the string
+23, Oct 17
+C++ Program To Remove Duplicates From A Given String
+22, Nov 21
+Java Program To Remove Duplicates From A Given String
+22, Nov 21
+C# Program To Remove Duplicates From A Given String
+22, Oct 21
+Javascript Program To Remove Duplicates From A Given String
+22, Nov 21
+Minimum number of insertions in given String to remove adjacent duplicates
+07, Jan 22
+Remove duplicates from a given string
+22, Mar 09
+Python groupby method to remove all consecutive duplicates
+27, Dec 17
+Python | Remove all duplicates and permutations in nested list
+12, Feb 19
+Python Program To Recursively Remove All Adjacent Duplicates
+10, Oct 21
+Python - Remove K length Duplicates from String
+27, Aug 20
+Python | Sort given list by frequency and remove duplicates
+24, Apr 19
+C++ Program To Recursively Remove All Adjacent Duplicates
+10, Nov 21
+Java Program To Recursively Remove All Adjacent Duplicates
+10, Oct 21
+Recursively remove all adjacent duplicates
+10, Oct 13
+Remove three consecutive duplicates from string
+30, Aug 17
+Remove duplicates from a string in O(1) extra space
+26, Sep 18
+Remove duplicates from string keeping the order according to last occurrences
+28, Apr 20
+Python Remove Duplicates from a List
+29, Nov 17
+Python - Ways to remove duplicates from list
+24, Nov 18
+Python | Remove consecutive duplicates from list
+11, Feb 19
+Python | Remove duplicates from nested list
+15, Apr 19
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+GeeksforGeeks
+Vote for difficulty
+Current difficulty : Easy
+Easy
+Normal
+Medium
+Hard
+Expert
+Improved By :
+vs164758
+raghavsarimisetty
+Article Tags :
+Python
+Strings
+Practice Tags :
+Strings
+Improve Article
+Report Issue
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+
+WHAT'S NEW
+
+Python Programming Foundation -Self Paced Course
+View Details
+
+Must Do Coding Questions - Self Paced
+View Details
+
+Data Structures & Algorithms- Self Paced Course
+View Details
+
+MOST POPULAR IN PYTHON
+Python Dictionary
+Enumerate() in Python
+How to Install PIP on Windows ?
+Different ways to create Pandas Dataframe
+Python String | replace()
+
+MOST VISITED IN STRINGS
+Reverse a string in Java
+Write a program to reverse an array or string
+Longest Common Subsequence | DP-4
+Write a program to print all permutations of a given string
+C++ Data Types
+
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+In Media
+Contact Us
+Privacy Policy
+Copyright Policy
+Learn
+Algorithms
+Data Structures
+SDE Cheat Sheet
+Machine learning
+CS Subjects
+Video Tutorials
+News
+Top News
+Technology
+Work & Career
+Business
+Finance
+Lifestyle
+Languages
+Python
+Java
+CPP
+Golang
+C#
+SQL
+Web Development
+Web Tutorials
+Django Tutorial
+HTML
+CSS
+JavaScript
+Bootstrap
+Contribute
+Write an Article
+Improve an Article
+Pick Topics to Write
+Write Interview Experience
+Internships
+Video Internship
+@geeksforgeeks , Some rights reserved
+Lightbox
+Start Your Coding Journey Now!
+Login

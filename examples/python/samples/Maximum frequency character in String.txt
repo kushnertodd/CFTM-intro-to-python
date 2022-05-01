@@ -1,0 +1,215 @@
+# Python 3 code to demonstrate 
+# Maximum frequency character in String
+# naive method 
+  
+# initializing string 
+test_str = "GeeksforGeeks"
+  
+# printing original string
+print ("The original string is : " + test_str)
+  
+# using naive method to get
+# Maximum frequency character in String
+all_freq = {}
+for i in test_str:
+    if i in all_freq:
+        all_freq[i] += 1
+    else:
+        all_freq[i] = 1
+res = max(all_freq, key = all_freq.get) 
+  
+# printing result 
+print ("The maximum of all characters in GeeksforGeeks is : " + str(res))
+Output :
+The original string is : GeeksforGeeks
+The maximum of all characters in GeeksforGeeks is : e
+ 
+
+Method 2 : Using collections.Counter() + max()
+The most suggested method that could be used to find all occurrences is this method, this actually gets all element frequency and could also be used to print single element frequency if required. We find maximum occurring character by using max() on values.
+
+# Python 3 code to demonstrate 
+# Maximum frequency character in String
+# collections.Counter() + max()
+from collections import Counter
+  
+# initializing string 
+test_str = "GeeksforGeeks"
+  
+# printing original string
+print ("The original string is : " + test_str)
+  
+# using collections.Counter() + max() to get 
+# Maximum frequency character in String
+res = Counter(test_str)
+res = max(res, key = res.get) 
+  
+# printing result 
+print ("The maximum of all characters in GeeksforGeeks is : " + str(res))
+Output :
+The original string is : GeeksforGeeks
+The maximum of all characters in GeeksforGeeks is : e
+
+
+
+
+Like
+6
+Next
+Python | Frequency of each character in String
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+4
+5
+6
+Maximum length prefix such that frequency of each character is atmost number of characters with minimum frequency
+30, Mar 20
+Python - Sort Strings by maximum frequency character
+01, Dec 20
+Python | Frequency of each character in String
+22, Nov 18
+Python | Construct string from character frequency tuple
+28, Nov 19
+Python - Sort String list by K character frequency
+28, Aug 20
+Python - Expand Character Frequency String
+25, Sep 20
+Understanding TF-IDF (Term Frequency-Inverse Document Frequency)
+20, Jan 21
+Python | Find frequency of given character at every position in list of lists
+30, Apr 19
+Python | Insert character after every character pair
+04, Jul 19
+Python program to read character by character from a file
+15, Jan 20
+Python - Create a Dictionary with Key as First Character and Value as Words Starting with that Character
+24, Nov 20
+Python | Values Frequency till Maximum K
+17, Feb 20
+Python - Maximum frequency in Tuple
+18, Jun 20
+Find frequency of each word in a string in Python
+11, Jun 18
+Python | Count all prefixes in given string with greatest frequency
+06, Jun 18
+Python | Frequency of substring in given string
+24, Jun 19
+Python - Prefix frequency in string List
+10, Mar 20
+Python | Frequency of numbers in String
+30, Mar 20
+Python - Bigrams Frequency in String
+21, Apr 20
+Python - Words Frequency in String Shorthands
+24, May 20
+Python - All substrings Frequency in String
+22, Aug 20
+Python - Frequency of K in sliced String
+22, Aug 20
+Python - List Words Frequency in String
+15, Aug 20
+Python - Specific Characters Frequency in String List
+01, Sep 20
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+manjeet_04
+@manjeet_04
+Vote for difficulty
+Current difficulty : Easy
+Easy
+Normal
+Medium
+Hard
+Expert
+Improved By :
+nidhi_biet
+Article Tags :
+Python string-programs
+Python
+Python Programs
+Improve Article
+Report Issue
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+
+WHAT'S NEW
+
+Python Programming Foundation -Self Paced Course
+View Details
+
+Must Do Coding Questions - Self Paced
+View Details
+
+Data Structures & Algorithms- Self Paced Course
+View Details
+
+MOST POPULAR IN PYTHON
+Python Dictionary
+Enumerate() in Python
+How to Install PIP on Windows ?
+Different ways to create Pandas Dataframe
+Python String | replace()
+
+MOST VISITED IN PYTHON PROGRAMS
+Defaultdict in Python
+Python | Split string into list of characters
+Python | Get dictionary keys as a list
+Python | Convert a list to dictionary
+Python program to check whether a number is Prime or not
+
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+In Media
+Contact Us
+Privacy Policy
+Copyright Policy
+Learn
+Algorithms
+Data Structures
+SDE Cheat Sheet
+Machine learning
+CS Subjects
+Video Tutorials
+News
+Top News
+Technology
+Work & Career
+Business
+Finance
+Lifestyle
+Languages
+Python
+Java
+CPP
+Golang
+C#
+SQL
+Web Development
+Web Tutorials
+Django Tutorial
+HTML
+CSS
+JavaScript
+Bootstrap
+Contribute
+Write an Article
+Improve an Article
+Pick Topics to Write
+Write Interview Experience
+Internships
+Video Internship
+@geeksforgeeks , Some rights reserved
+Lightbox
+Start Your Coding Journey Now!
+Login
+Register

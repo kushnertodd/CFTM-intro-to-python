@@ -1,0 +1,7 @@
+aei.txt
+aeo.txt
+aeu.txt
+eio.txt
+eiu.txt
+eou.txt
+iou.txt

@@ -1,0 +1,11 @@
+find prime numbers with the sieve of erasthenes
+
+create an array primes[1000000]
+initialize each element to 1 = is prime
+start with 2 is prime
+for every number n divisible by 2 above 2: 4, 6, 8, ... less than 1M set primes[n] = 0
+go to the next element n of primes where primes[n] = 1 (3)
+for every number n divisible by 3 above 3: 6, 9, ... less than 1M set primes[n] = 0
+go to the next number k of primes where primes[k] = 1 (5)
+repeat why n < 500,000 (why?)
+print every element n of primes[n] = 1

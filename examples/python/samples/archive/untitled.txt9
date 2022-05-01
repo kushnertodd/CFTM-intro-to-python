@@ -1,0 +1,67 @@
+-----
+
+Given a pair of non empty strings. Count the number of matching characters in those strings (consider the single count for the character which have duplicates in the strings).
+
+Examples:
+
+Input : str1 = 'abcdef'
+        str2 = 'defghia'
+Output : 4 
+(i.e. matching characters :- a, d, e, f)
+
+Input : str1 = 'aabcddekll12@'
+        str2 = 'bb22ll@55k'
+Output : 5 
+(i.e. matching characters :- b, 1, 2, @, k)
+Recommended: Please try your approach on {IDE} first, before moving on to the solution.
+Approach 1:
+1. Initialize a counter variable with 0.
+2. Iterate over the first string from the starting character to ending character.
+3. If the character extracted from first string is found in the second string and also first occurrence index of that extracted character in first string is same as that of index of current extracted character then increment the value of counter by 1.
+
+Note: For this, use string.find(character) in python.
+
+This returns the first occurrence index of character in string, if found, otherwise return -1.
+
+For example : str=’abcdedde’
+str.find(‘d’) –> 3
+str.find(‘e’) –> 4
+str.find(‘g’) –> -1
+
+4. Output the value of counter.
+
+Below is the implementation of above approach.
+
+# Python code to count number of matching
+# characters in a pair of strings
+  
+# count function
+def count(str1, str2): 
+    c, j = 0, 0
+      
+    # loop executes till length of str1 and 
+    # stores value of str1 character by character 
+    # and stores in i at each iteration.
+    for i in str1:    
+          
+        # this will check if character extracted from
+        # str1 is present in str2 or not(str2.find(i)
+        # return -1 if not found otherwise return the 
+        # starting occurrence index of that character
+        # in str2) and j == str1.find(i) is used to 
+        # avoid the counting of the duplicate characters
+        # present in str1 found in str2
+        if str2.find(i)>= 0 and j == str1.find(i): 
+            c += 1
+        j += 1
+    print ('No. of matching characters are : ', c)
+  
+# Main function
+def main(): 
+    str1 ='aabcddekll12@' # first string
+    str2 ='bb2211@55k' # second string
+    count(str1, str2) # calling count function 
+  
+# Driver Code
+if __name__=="__main__":
+    main()

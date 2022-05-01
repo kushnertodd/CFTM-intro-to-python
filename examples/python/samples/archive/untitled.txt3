@@ -1,0 +1,301 @@
+---
+
+Data analysis and Visualization with Python
+Difficulty Level : Medium
+Last Updated : 21 Feb, 2018
+Python is a great language for doing data analysis, primarily because of the fantastic ecosystem of data-centric Python packages. Pandas is one of those packages, and makes importing and analyzing data much easier. In this article, I have used Pandas to analyze data on Country Data.csv file from UN public Data Sets of a popular ‘statweb.stanford.edu’ website.
+As I have analyzed the Indian Country Data, I have introduced Pandas key concepts as below. Before going through this article, have a rough idea of basics from matplotlib and csv.
+
+Installation
+Easiest way to install pandas is to use pip:
+
+pip install pandas
+or, Download it from here
+
+Creating A DataFrame in Pandas
+
+Creation of dataframe is done by passing multiple Series into the DataFrame class using pd.Series method. Here, it is passed in the two Series objects, s1 as the first row, and s2 as the second row.
+Example:
+
+# assigning two series to s1 and s2
+s1 = pd.Series([1,2])
+s2 = pd.Series(["Ashish", "Sid"])
+# framing series objects into data
+df = pd.DataFrame([s1,s2])
+# show the data frame
+df
+  
+# data framing in another way
+# taking index and column values
+dframe = pd.DataFrame([[1,2],["Ashish", "Sid"]],
+        index=["r1", "r2"],
+        columns=["c1", "c2"])
+dframe
+  
+# framing in another way 
+# dict-like container
+dframe = pd.DataFrame({
+        "c1": [1, "Ashish"],
+        "c2": [2, "Sid"]})
+dframe
+Output:
+
+c5  c6  c7
+Importing Data with Pandas
+
+The first step is to read the data. The data is stored as a comma-separated values, or csv, file, where each row is separated by a new line, and each column by a comma (,). In order to be able to work with the data in Python, it is needed to read the csv file into a Pandas DataFrame. A DataFrame is a way to represent and work with tabular data. Tabular data has rows and columns, just like this csv file(Click Download).
+Example:
+
+# Import the pandas library, renamed as pd
+import pandas as pd
+  
+# Read IND_data.csv into a DataFrame, assigned to df
+df = pd.read_csv("IND_data.csv")
+  
+# Prints the first 5 rows of a DataFrame as default
+df.head()
+  
+# Prints no. of rows and columns of a DataFrame
+df.shape
+Output:
+
+c1
+29,10
+Indexing DataFrames with Pandas
+
+Indexing can be possible using the pandas.DataFrame.iloc method. The iloc method allows to retrieve as  many as rows and columns by position.
+Examples:
+
+# prints first 5 rows and every column which replicates df.head()
+df.iloc[0:5,:]
+# prints entire rows and columns
+df.iloc[:,:]
+# prints from 5th rows and first 5 columns
+df.iloc[5:,:5]
+Indexing Using Labels in Pandas
+
+Indexing can be worked with labels using the pandas.DataFrame.loc method, which allows to index using labels instead of positions.
+Examples:
+
+# prints first five rows including 5th index and every columns of df
+df.loc[0:5,:]
+# prints from 5th rows onwards and entire columns
+df = df.loc[5:,:]
+The above doesn’t actually look much different from df.iloc[0:5,:]. This is because while row labels can take on any values, our row labels match the positions exactly. But column labels can make things much easier when working with data. Example:
+
+# Prints the first 5 rows of Time period
+# value 
+df.loc[:5,"Time period"]
+c2
+DataFrame Math with Pandas
+
+Computation of data frames can be done by using Statistical Functions of pandas tools.
+Examples:
+
+# computes various summary statistics, excluding NaN values
+df.describe()
+# for computing correlations
+df.corr()
+# computes numerical data ranks
+df.rank()
+c4
+
+c9 
+
+c10
+Pandas Plotting
+
+Plots in these examples are made using standard convention for referencing the matplotlib API which provides the basics in pandas to easily create decent looking plots.
+Examples:
+
+# import the required module 
+import matplotlib.pyplot as plt
+# plot a histogram 
+df['Observation Value'].hist(bins=10)
+  
+# shows presence of a lot of outliers/extreme values
+df.boxplot(column='Observation Value', by = 'Time period')
+  
+# plotting points as a scatter plot
+x = df["Observation Value"]
+y = df["Time period"]
+plt.scatter(x, y, label= "stars", color= "m", 
+            marker= "*", s=30)
+# x-axis label
+plt.xlabel('Observation Value')
+# frequency label
+plt.ylabel('Time period')
+# function to show the plot
+plt.show()
+figure_1
+figure_2
+figure_3
+Data Analysis and Visualization with Python | Set 2
+
+Reference:
+
+http://pandas.pydata.org/pandas-docs/stable/tutorials.html
+https://www.datacamp.com
+This article is contributed by Afzal_Saan. If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.
+
+
+
+
+
+Like
+6
+Previous
+Next
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+4
+5
+6
+Data Analysis and Visualization with Python | Set 2
+20, Feb 18
+Covid-19 Analysis and Visualization using Plotly Express
+14, Sep 21
+RFM Analysis Analysis Using Python
+21, Oct 21
+Visualization and Prediction of Crop Production data using Python
+24, Nov 20
+Data Visualization using Plotnine and ggplot2 in Python
+29, Dec 21
+Data visualization with different Charts in Python
+09, Mar 18
+Python - Data visualization using Bokeh
+29, Jun 18
+COVID-19 Data Visualization using matplotlib in Python
+07, Jun 20
+Data Visualization using Turicreate in Python
+18, Jul 20
+Top 8 Python Libraries for Data Visualization
+13, Aug 20
+Data Visualization with Python Seaborn
+02, Dec 20
+Python - Data visualization using covid19 India API
+20, Jan 21
+Python Bokeh tutorial - Interactive Data Visualization with Bokeh
+19, Feb 21
+Time series data Visualization in Python
+15, Mar 21
+Data Visualization with Python
+22, Jul 21
+Using Plotly for Interactive Data Visualization in Python
+22, Jul 21
+Python - Data visualization tutorial
+29, Dec 21
+Data Visualization Using Chartjs and Django
+22, Jan 20
+Data visualization with Pairplot Seaborn and Pandas
+22, Dec 20
+Pandas Built-in Data Visualization | ML
+17, Jun 19
+10 Best Data Visualization Tools in 2020
+06, Apr 20
+Interactive visualization of data using Bokeh
+05, Jun 20
+Animated Data Visualization using Plotly Express
+19, Jun 20
+Data Visualization with Seaborn Line Plot
+10, Nov 20
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+GeeksforGeeks
+Vote for difficulty
+Current difficulty : Medium
+Easy
+Normal
+Medium
+Hard
+Expert
+Article Tags :
+Python
+Improve Article
+Report Issue
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+
+
+WHAT'S NEW
+
+Python Programming Foundation -Self Paced Course
+View Details
+
+Must Do Coding Questions - Self Paced
+View Details
+
+Data Structures & Algorithms- Self Paced Course
+View Details
+
+MOST POPULAR IN PYTHON
+Python Dictionary
+Read a file line by line in Python
+Enumerate() in Python
+How to Install PIP on Windows ?
+Iterate over a list in Python
+
+MORE RELATED ARTICLES IN PYTHON
+Different ways to create Pandas Dataframe
+Python String | replace()
+Python program to convert a list to string
+Create a Pandas DataFrame from Lists
+Reading and Writing to text files in Python
+
+5th Floor, A-118,
+Sector-136, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+Company
+About Us
+Careers
+In Media
+Contact Us
+Privacy Policy
+Copyright Policy
+Learn
+Algorithms
+Data Structures
+SDE Cheat Sheet
+Machine learning
+CS Subjects
+Video Tutorials
+News
+Top News
+Technology
+Work & Career
+Business
+Finance
+Lifestyle
+Languages
+Python
+Java
+CPP
+Golang
+C#
+SQL
+Web Development
+Web Tutorials
+Django Tutorial
+HTML
+CSS
+JavaScript
+Bootstrap
+Contribute
+Write an Article
+Improve an Article
+Pick Topics to Write
+Write Interview Experience
+Internships
+Video Internship
+@geeksforgeeks , Some rights reserved
+Lightbox
+Start Your Coding Journey Now!
+Login
+Register
