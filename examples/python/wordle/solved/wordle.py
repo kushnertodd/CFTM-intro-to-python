@@ -5,7 +5,7 @@ usage:
     python wordle.py possible required exact
 where:
     possible  all the letters that could be in the word
-              all the lettes that aren't dark grey on the keyboard
+              all the letters that aren't dark grey on the keyboard
     required  all the letters that must be in the word
               all the letters that are green or yellow on the keyboard
     exact     the letters that are known to be in an exact position
@@ -49,3 +49,4 @@ for next_line in f:
     if check_dictionary_word(dictionary_word, possible, required, exact):
         print(dictionary_word)
 f.close()
+
