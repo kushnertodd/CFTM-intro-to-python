@@ -25,7 +25,7 @@ def check_dictionary_word(dictionary_word, possible, required, exact):
     for c in dictionary_word:
         if not c in possible:
             return False
-    # check that all possible characters are in the dictionary word
+    # check that all dictionary characters are in the required letters
     for c in required:
         if not c in dictionary_word:
             return False
