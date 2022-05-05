@@ -1,0 +1,8 @@
+01/05/2022 Colin Heath $70.00 Phone-Cell
+01/11/2022 Courtney Collins $14.99 Cable-HBO
+01/12/2022 John Johnson $70.00 Phone-Cell
+01/17/2022 Colin Heath $50.00 Internet-100MB
+02/18/2022 John Johnson $80.00 Internet-1GB
+02/21/2022 Courtney Collins $6.99 Cable-Hulu
+02/23/2022 Colin Heath $6.99 Cable-Hulu
+03/07/2022 Courtney Collins $50.00 Internet-100MB
