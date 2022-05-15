@@ -1,3 +1,0 @@
-house
-route
-outer
