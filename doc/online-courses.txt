@@ -1,0 +1,7 @@
+https://mybinder.org/v2/gh/kushnertodd/CFTM-intro-to-python/master?labpath=python_intro.ipynb
+
+
+allardice simon
+david tucker
+udemy
+https://app.pluralsight.com/course-player?clipId=8c887a17-5279-4361-8931-a30dbc711489
