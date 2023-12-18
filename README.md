@@ -12,5 +12,5 @@ https://mybinder.org/v2/gh/kushnertodd/CFTM-intro-to-python/master?labpath=pytho
 https://www.anaconda.com/download
 - Download the Python Jupyter notebook. Go to this page, select Code and Download Zip. Expand the zip into a directory.  
 https://github.com/kushnertodd/CFTM-intro-to-python
--  Select Launch Anaconda Navigator from the Start menu. Select Launch under Jupyter Notebook. Open the file python_intro.ipynb from the directory where you installed the notebook. You can skip down to the section that says Using Jupyter where the lesson really starts.
+-  Select Launch Anaconda Navigator from the Start menu. Select Launch under Jupyter Notebook. Open the file `python_intro.ipynb` from the directory where you installed the notebook. 
 
