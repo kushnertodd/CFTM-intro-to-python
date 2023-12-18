@@ -1,0 +1,27 @@
+accurate
+complete 
+consistent 
+corrupted
+data validation
+duplicate
+empty fields
+incomplete 
+incorrect
+incorrect capitalization
+incorrectly formatted
+invalid 
+irrelevant 
+mislabeled categories or classes “N/A” and “Not Applicable”
+missing codes
+missing data
+missing fields 
+misspelling
+outliers
+removing data
+standardizing data sets
+structural errors strange naming conventions
+syntax errors
+typos
+uniform data
+unique data
+unreliable
