@@ -1,9 +1,6 @@
 # CFTM-intro-to-python
 Jupyter site for Introduction to Python course
 
-Public myBinder webpage:
-https://mybinder.org/v2/gh/kushnertodd/CFTM-intro-to-python/master?labpath=python_intro.ipynb
-
 Running the Python Jupyter notebook
 
 - This runs the notebook from the web. It's better to run it locally if this does not work.  
