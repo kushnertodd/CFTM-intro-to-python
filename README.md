@@ -24,3 +24,6 @@ https://github.com/kushnertodd/CFTM-intro-to-python
 
 -  Select Anaconda Navigator from Anaconda3 folder on the Start menu. Select Launch under Jupyter Notebook. Find the directory where you installed the notebook in the file browser and open the file `python_intro.ipynb` to start.
 
+<!--
+https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
+-->
