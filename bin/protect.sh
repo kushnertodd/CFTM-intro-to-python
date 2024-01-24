@@ -5,4 +5,4 @@ chmod 444 \
 	LICENSE \
 	README.md \
 	python_intro.ipynb \
-	notebooks
+	notebooks/*
